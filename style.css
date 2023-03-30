@@ -36,6 +36,84 @@ ul {
   list-style: none;
 }
 
+header {
+  box-shadow: 0px 2px 12px rgb(185, 185, 185);
+}
+header .first-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 2px solid #EFEFEF;
+}
+@media (min-width: 700px) {
+  header .first-section {
+    padding: 1rem 3rem;
+  }
+}
+header .first-section .black-box {
+  height: 34px;
+  width: 34px;
+  background-color: black;
+}
+header .first-section .btn-box a {
+  display: inline-block;
+}
+header .first-section .btn-box .started {
+  background-color: white;
+  color: #1A9959;
+  border: 1px solid #1A9959;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+header .first-section .btn-box .sign-in {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  color: #1A9959;
+}
+header .second-section {
+  padding-top: 15px;
+  display: flex;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+@media (min-width: 700px) {
+  header .second-section {
+    padding: 1rem 3rem;
+  }
+}
+header .second-section ul {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  padding-left: 1rem;
+}
+@media (min-width: 700px) {
+  header .second-section ul {
+    padding-left: 0;
+  }
+}
+header .second-section ul::-webkit-scrollbar {
+  display: none;
+}
+header .second-section ul li {
+  flex: 0 0 auto;
+}
+header .second-section ul li .header-link {
+  color: #6C6C6C;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+header .second-section ul li .active {
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+}
+
 .main-footer {
   background-color: #191919;
   color: #EFEFEF;

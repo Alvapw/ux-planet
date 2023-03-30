@@ -39,6 +39,110 @@ ul {
     list-style: none;
 }
 
+header {
+    box-shadow: 0px 2px 12px rgb(185, 185, 185);
+
+    .first-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        border-bottom: 2px solid #EFEFEF;
+
+        @media (min-width:700px) {
+            padding: 1rem 3rem;
+
+        }
+
+        .black-box {
+            height: 34px;
+            width: 34px;
+            background-color: black;
+            // padding-left: ;
+
+        }
+
+        .btn-box {
+
+            a {
+                display: inline-block;
+            }
+
+            .started {
+                background-color: white;
+                color: #1A9959;
+                border: 1px solid #1A9959;
+                padding: 8px 10px;
+                border-radius: 5px;
+
+            }
+
+            .sign-in {
+                background-color: white;
+                color: black;
+                border: none;
+                padding: 8px 10px;
+                border-radius: 5px;
+                color: #1A9959;
+            }
+        }
+
+
+    }
+
+    .second-section {
+        padding-top: 15px;
+        display: flex;
+        text-align: center;
+        padding-bottom: 1rem;
+
+        @media (min-width:700px) {
+            padding: 1rem 3rem;
+
+        }
+
+
+        ul {
+            display: flex;
+            align-items: center;
+            overflow-x: scroll;
+            padding-left: 1rem;
+
+            @media (min-width:700px) {
+                padding-left: 0;
+
+            }
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            li {
+                flex: 0 0 auto;
+
+                .header-link {
+                    color: #6C6C6C;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    margin-right: 30px;
+                }
+
+                .active {
+                    color: black;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+            }
+        }
+
+
+
+    }
+
+}
+
+
+
 .main-footer {
     background-color: #191919;
     color: #EFEFEF;
