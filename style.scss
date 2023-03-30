@@ -1,21 +1,102 @@
 @import 'sass/varibales';
-*,html{
+
+*,
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-p{
+
+p {
     color: $primary-color;
     line-height: 1.2;
 }
-a{
+
+a {
     text-decoration: none;
     color: $secondary-color;
 }
-img{
+
+img {
     width: 100%;
     display: block;
 }
-ul{
+
+ul {
     list-style: none;
+}
+
+.main-footer {
+    background-color: #191919;
+    color: #EFEFEF;
+    padding: 2rem 1rem;
+
+
+    .footer-first-section {
+        @media (min-width:1200px) {
+            display: flex;
+        }
+
+        .footer-box {
+            max-width: 90%;
+
+            @media (min-width:1200px) {
+                flex: 0 0 30%;
+                margin: auto;
+            }
+
+            .footer-heading {
+                padding-bottom: 1rem;
+                font-size: 1.2rem;
+            }
+
+            .footer-text {
+                color: #EFEFEF;
+                padding-bottom: 1rem;
+                font-size: .9rem;
+            }
+        }
+    }
+
+    .footer-seconds-section {
+        border-top: 1px solid #979797;
+
+        @media (min-width:1200px) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .ul-heading {
+            padding: 1rem 0;
+            font-size: 1.3rem;
+
+            @media (min-width:1200px) {
+                flex: 0 0 5rem;
+            }
+
+
+        }
+
+        .footer-ul {
+            @media (min-width:1200px) {
+                display: flex;
+                flex: 0 0 20rem;
+                justify-content: right;
+            }
+
+            .footer-li {
+                padding: 1rem 0;
+
+                @media (min-width:1200px) {
+                    flex: 0 0 5rem;
+                }
+
+                .footer-link {
+                    color: #6C6C6C;
+                    padding: 1rem 0;
+                    font-size: .89rem;
+                }
+            }
+        }
+    }
 }
